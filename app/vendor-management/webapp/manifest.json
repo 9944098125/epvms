@@ -117,13 +117,15 @@
 									},
 									"columns": {
 										"VendorLogo": {
-											"header": "Vendor Logo",
+											"header": "Logo",
 											"template": "com.epvms.vendormanagement.ext.fragment.VendorLogoColumn",
 											"position": {
 												"anchor": "DataField::vendorCode",
 												"placement": "Before"
 											},
-											"availability": "Default"
+											"availability": "Default",
+											"width": "65px",
+											"horizontalAlign": "Center"
 										}
 									}
 								}

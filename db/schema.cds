@@ -23,4 +23,12 @@ entity Vendors : cuid, managed {
     onboardingDate     : Date;
     logoUrl            : String(500);
     criticality        : Integer default 3;
+
+    // Dynamic UI Control Flags (Computed at Runtime)
+    virtual isAlreadyActive     : Boolean;
+    virtual isAlreadyInactive   : Boolean;
+    virtual isAlreadyBlocked    : Boolean;
+    virtual isActivateAllowed   : Boolean;
+    virtual isDeactivateAllowed : Boolean;
+    virtual isBlockAllowed      : Boolean;
 }

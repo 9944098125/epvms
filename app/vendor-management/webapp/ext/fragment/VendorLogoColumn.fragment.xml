@@ -1,16 +1,17 @@
-
 <core:FragmentDefinition
     xmlns:core="sap.ui.core"
-    xmlns="sap.m">
-
-    <Image
-        id="vendorLogoImage"
+    xmlns="sap.m"
+>
+    <Avatar
+        id="vendorLogo"
         src="{logoUrl}"
-        width="40px"
-        height="40px"
-        decorative="false"
-        densityAware="false"
-        alt="Vendor Logo"
+        initials="{name}"
+        fallbackIcon="sap-icon://building"
+        displayShape="Square"
+        displaySize="Custom"
+        customDisplaySize="36px"
+        customFontSize="12px"
+        showBorder="true"
+        tooltip="{name}"
     />
-
 </core:FragmentDefinition>

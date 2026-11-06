@@ -8,7 +8,10 @@
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-vendor-management": "cds watch --open com.epvms.vendormanagement/index.html?sap-ui-xx-viewCache=false --livereload false"
+    "watch": "cds watch --open com.epvms.vendormanagement/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-vendor-management": "cds watch --open com.epvms.vendormanagement/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "dev": "npm run watch",
+    "test": "node test/verify_vendor_module.js"
   },
   "private": true,
   "cds": {
