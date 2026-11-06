@@ -1,0 +1,16 @@
+
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+
+    <Image
+        id="vendorLogoImage"
+        src="{logoUrl}"
+        width="40px"
+        height="40px"
+        decorative="false"
+        densityAware="false"
+        alt="Vendor Logo"
+    />
+
+</core:FragmentDefinition>

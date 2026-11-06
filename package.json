@@ -1,0 +1,37 @@
+{
+  "name": "epvms",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@cap-js/postgres": "^3.1.2",
+    "@sap/cds": "^10"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-vendor-management": "cds watch --open com.epvms.vendormanagement/index.html?sap-ui-xx-viewCache=false --livereload false"
+  },
+  "private": true,
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "postgres",
+        "pool": {
+          "min": 0,
+          "max": 10,
+          "acquireTimeoutMillis": 30000,
+          "destroyTimeoutMillis": 5000
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "@sap/cds-dk": "^10.2.1",
+    "cds-plugin-ui5": "^0.17.0"
+  },
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app/vendor-management"
+  ]
+}
